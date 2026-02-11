@@ -4,9 +4,6 @@ import TheWelcome from './components/TheWelcome.vue'
 </script>
 
 <template>
-  <header>
-      <HelloWorld/>
-  </header>
 
 </template>
 
