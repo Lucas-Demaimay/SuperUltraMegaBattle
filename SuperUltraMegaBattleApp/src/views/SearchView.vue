@@ -13,7 +13,7 @@ const error = ref(null)
 
 async function fetchHero() {
   try {
-    const response = await fetch(`/api/api/29886e1708e8eb7c81aebfac3130d8a9/${props.id}`)
+    const response = await fetch(`https://superheroapi.com/api/29886e1708e8eb7c81aebfac3130d8a9/${props.id}`)
     const result = await response.json()
 
     if (result.response === "error") {

@@ -20,7 +20,7 @@ async function searchHeroes() {
   error.value = null
 
   try {
-    const response = await fetch(`/api/api/29886e1708e8eb7c81aebfac3130d8a9/search/${query.value}`)
+    const response = await fetch(`https://superheroapi.com/api/29886e1708e8eb7c81aebfac3130d8a9/search/${query.value}`)
     const data = await response.json()
     heroes.value = data.results || []
   } catch (err) {
