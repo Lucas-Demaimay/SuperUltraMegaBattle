@@ -45,7 +45,11 @@ watch(query, () => {
 
 <template>
   <div class="center">
-    <h1>SuperUltraMegaBattle</h1>
+    <h1>SuperHerosDle</h1>
+
+    <RouterLink :to="{ name: 'game' }" class="nav-link">
+      START
+</RouterLink>
 
     <div class="search-hero">
       <input
@@ -144,5 +148,36 @@ ul::-webkit-scrollbar-thumb {
 .error {
   color: red;
   margin-top: 5px;
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 14px 28px;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 12px;
+  text-decoration: none;
+  background: linear-gradient(135deg, #7D0080, #b300b3);
+  color: white;
+  transition: all 0.25s ease;
+  box-shadow: 0 6px 15px rgba(125, 0, 128, 0.3);
+  letter-spacing: 1px;
+}
+
+/* Hover */
+.nav-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(125, 0, 128, 0.5);
+}
+
+/* Click */
+.nav-link:active {
+  transform: scale(0.95);
+}
+
+/* Route active */
+.router-link-active {
+  background: linear-gradient(135deg, #4CAF50, #2e7d32);
+  box-shadow: 0 6px 15px rgba(76, 175, 80, 0.4);
 }
 </style>

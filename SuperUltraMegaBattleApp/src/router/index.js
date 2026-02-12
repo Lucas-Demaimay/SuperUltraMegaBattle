@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 
 import AccueilView from "@/views/AccueilView.vue";
 import SearchView from "@/views/SearchView.vue";
+import DleView from "@/views/DleView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -17,6 +18,11 @@ const router = createRouter({
       component: SearchView,
       props: true,
     },
+    {
+    path: '/game',
+    name: 'game',
+    component: DleView
+    }
   ],
 });
 
