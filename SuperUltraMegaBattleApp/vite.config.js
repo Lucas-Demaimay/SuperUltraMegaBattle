@@ -6,7 +6,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 export default defineConfig({
 
-  base: '/superultramegabattle/',
+  base: '/SuperUltraMegaBattle/',
 
   plugins: [
     vue(),
